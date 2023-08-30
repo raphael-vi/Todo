@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>a</title>
+</head>
+<body>
+    <header>
+        <h1> To do</h1>
+    </header>
+    <main id="container">
+        <button class = "open-form">ADD TASK</button>
+        <section id="task-section">
+            
+            <div class="task-list"></div>
+
+
+            <dialog id="favDialog">
+                <form id="task-form" method="dialog">
+                    <label for="title">
+                        <h4> 
+                            Insert title
+                        </h4>
+                    </label>
+                    <input name="title" id="title-input" type="text">
+                    
+                    <input name="duetime" id="due-time-input" type="date">
+                    <menu>
+                        <button id="cancel" type="reset">X</button>
+                        <button type="submit"> <h4>Add task</h4></button>
+                      </menu>
+                    
+
+                </form>
+            </dialog>
+
+        </section>
+    </main>
+    <script src="bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    height: 100%;
+    background-color: rgb(204, 204, 204);
+}
+
+header{
+    text-align: center;
+    color: rgb(0, 0, 0);
+
+}
+
+#container{
+    display: flex;
+    height: 500px;
+    align-items: center;
+    background-color: rgb(114, 114, 114);
+    justify-content: center;
+}
+
+
+#favDialog{
+    
+    margin: auto;
+
+}
+
+.task-item{
+    background-color: rgb(165, 130, 130);
+    border-radius: 4px;
+    padding: 5px;
+}
+
