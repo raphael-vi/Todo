@@ -1,42 +1,81 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>a</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1> To do</h1>
+      <h1>To do</h1>
     </header>
     <main id="container">
-        <button class = "open-form">ADD TASK</button>
-        <section id="task-section">
-            
-            <div class="task-list"></div>
+      <section class="task-section">
+        <button class="open-form">ADD TASK</button>
 
+        <div class="task-list">
+          <li class="task-item">
+            <button class="delete-item-button"></button>
+          </li>
+        </div>
 
-            <dialog id="favDialog">
-                <form id="task-form" method="dialog">
-                    <label for="title">
-                        <h4> 
-                            Insert title
-                        </h4>
-                    </label>
-                    <input name="title" id="title-input" type="text">
-                    
-                    <input name="duetime" id="due-time-input" type="date">
-                    <menu>
-                        <button id="cancel" type="reset">X</button>
-                        <button type="submit"> <h4>Add task</h4></button>
-                      </menu>
-                    
+        <dialog id="favDialog">
+          <form id="task-form" method="dialog">
+            <label for="title">
+              <h4>Insert title</h4>
+            </label>
+            <input name="title" id="title-input" type="text" />
 
-                </form>
-            </dialog>
+            <input name="duetime" id="due-time-input" type="date" />
+            <menu>
+              <button id="cancel-task" type="reset">X</button>
 
-        </section>
+              <button type="submit"><h4>Add task</h4></button>
+            </menu>
+          </form>
+        </dialog>
+      </section>
+
+      <div id="project-list">
+        <button class="open-project-form">ADD PROJECT</button>
+        <!--Insert Projects-->
+      </div>
+      <section id="project-section">
+        
+
+        <dialog id="projectDialog">
+          <form id="project-form" method="dialog">
+            <label for="title">
+              <h4>Insert title</h4>
+            </label>
+            <input name="title" id="project-title-input" type="text" />
+
+            <input name="duetime" id="project-due-time-input" type="date" />
+            <menu>
+              <button id="cancel-project" type="reset">X</button>
+
+              <button type="submit"><h4>Add project</h4></button>
+            </menu>
+          </form>
+        </dialog>
+
+        <dialog id="task-project-dialog">
+          <form id="project-task-form" method="dialog">
+            <label for="title">
+              <h4>Insert title</h4>
+            </label>
+            <input name="title" id="task-title-input" type="text" />
+
+            <input name="duetime" id="task-due-time-input" type="date" />
+            <menu>
+              <button id="cancel-task" type="reset">X</button>
+
+              <button type="submit"><h4>Add task</h4></button>
+            </menu>
+          </form>
+        </dialog>
+      </section>
     </main>
     <script src="bundle.js"></script>
-</body>
+  </body>
 </html>

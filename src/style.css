@@ -1,37 +1,61 @@
-*{
-    margin: 0;
-    padding: 0;
-    
+* {
+  margin: 0;
+  padding: 0;
 }
-body{
-    height: 100%;
-    background-color: rgb(204, 204, 204);
-}
-
-header{
-    text-align: center;
-    color: rgb(0, 0, 0);
-
+body {
+  height: 100%;
+  background-color: rgb(204, 204, 204);
 }
 
-#container{
-    display: flex;
-    height: 500px;
-    align-items: center;
-    background-color: rgb(114, 114, 114);
-    justify-content: center;
+header {
+  text-align: center;
+  color: rgb(0, 0, 0);
 }
 
-
-#favDialog{
-    
-    margin: auto;
-
+#container {
+  display: flex;
+  height: 500px;
+  align-items: center;
+  background-color: rgb(114, 114, 114);
+  justify-content: center;
 }
 
-.task-item{
-    background-color: rgb(165, 130, 130);
-    border-radius: 4px;
-    padding: 5px;
+#favDialog {
+  margin: auto;
+
+  width: 400px;
+  height: 600px;
 }
 
+.task-item {
+  background-color: rgb(165, 130, 130);
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.delete-item-button {
+  padding: 3px;
+  width: 5rem;
+  height: 2rem;
+  font-weight: bolder;
+  font-size: medium;
+}
+
+.task-section {
+  background-color: white;
+  height: 500px;
+}
+
+#project-list{
+    width:  100px;
+    height:  500px;
+    background-color: rgb(238, 238, 238);
+}
+
+.project-item{
+  background-color: blueviolet;
+  min-height: 60px;
+  margin: 20px;
+  border-radius: 7px;
+
+}
